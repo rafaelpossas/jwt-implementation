@@ -1,0 +1,25 @@
+<div class="navbar navbar-fixed-top" ng-controller="headerCtrl">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+                <h3 class="text-muted">Procymo Server Manager</h3>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse pull-right">
+            <ul class="nav nav-pills">
+                <li id="home">
+                    <a href="/">Home</a>
+                </li>
+                <li id="jobs">
+                    <a href="/jobs">Jobs</a>
+                </li>
+                <li ng-hide="isAuthenticated" class="" id="register">
+                    <a href="/register"> Register</a>
+                </li>
+                <li ng-show="isAuthenticated" class="" id="logout">
+                    <a href="/logout"> Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
